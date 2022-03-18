@@ -6,54 +6,33 @@ function App() {
 
   return (
     <div className='App'>
+      <div className='intro-bg-img'>
+        <Header />
 
-      <Header />
-
-      <section className='intro' id='home'>
-        <h1 className='section__title section__title--intro'>
-          Hi, I am <strong>Vitor Scolari</strong>
-        </h1>
-        <p className='section__subtitle section_subtitle--intro'>full-stack dev</p>
-        <img src={require('./images/profile_2.jpg')} alt='a picture of Vitor Scolari' className='intro__img'></img>  
-      </section>
+        <section className='intro' id='home'>
+          <h1 className='section__title section__title--intro'>
+            Hi, I am <strong>Vitor Scolari</strong>
+          </h1>
+          <p className='section__subtitle section_subtitle--intro'>full-stack dev</p>
+          <img src={require('./images/profile_2.jpg')} className='intro__img'></img>  
+        </section>
+      </div>
 
 
       <section className='my-services' id='services'>
-        <h2 className='section__title section__title--services'>What I do</h2>
-        <div className='services'>
-          <h3>React + Jinja2 + Django Web Development</h3>
-          <p>Developed 10 sites using python templates for the backend or using ReactJS and NodeJS with SQL Database
-            Integration.
-          </p>
-        </div>
-
-        <div className='service'>
-          <h3>Data Analysis and A.I</h3>
-          <p>Completed all available courses on Kaggle and participated in 10 machine learning competitions
-            placing top 20 in 4 of them.
-          </p>
-        </div>  
-
-        <div className='service'>
-          <h3>Blockchain Development</h3>
-          <p>Built my own web 3.0 application and created flash loan trading bots</p>
-        </div> 
-
 
         <a href='#work' className='btn'>My Work</a>
       </section>
 
       <section className='about-me' id='about'>
         <h2 className='section__title section__title--about'>Who I am</h2>
-        <p className='section__subtitle section_subtitle--about'>fsmdolkifsfmsldkmfkdsmf</p>
+          <p>
+            My main long-term focus is on building harmonic systems that are holistically integrated
+          </p>
+          <p>
+            lowering the risks that come with the growth of technology
+          </p>
 
-
-        <div className='about-me__body'>
-          <p>asdosajdisajn</p>
-          <p>jsadosujnadondsons</p>
-        </div>
-
-        <img src={require('./images/profile_1.PNG')} alt='' className='about-me__img'></img>
       </section>
 
       <section className='my-work' id='work'>
@@ -62,24 +41,43 @@ function App() {
 
         <div className='portfolio'>
           <a href='#' className='portfolio__item'>
-            <img src='' alt='' class='portfolio__img'></img>
+            <img src={require('./gifs/ScriptVis_flask_1.gif')} alt='' class='portfolio__img'></img>
           </a>
 
-          <a href='#' className='portfolio__item'>
-            <img src='' alt='' class='portfolio__img'></img>
+          <img src={require('./gifs/ScriptVis_flask_2.gif')} alt='' class='portfolio__img'></img>
+
+          <img src={require('./gifs/ScriptVis_flask_3.gif')} alt='' class='portfolio__img'></img>
+
+          <a href='https://domain-service-buildspace.vercel.app/' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/domain_service_Buildspace.gif')} alt='' class='portfolio__img'></img>
           </a>
 
-          <a href='#' className='portfolio__item'>
-            <img src='' alt='' class='portfolio__img'></img>
+          <img src={require('./gifs/GoogleKeep_simple.gif')} alt='' class='portfolio__img'></img>
+
+          <img src={require('./gifs/HackerNews_simple.gif')} alt='' class='portfolio__img'></img>
+
+          <img src={require('./gifs/TicTacToe_simple.gif')} alt='' class='portfolio__img'></img>
+
+          <a href='https://www.twitch.tv/vms_code' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/twitch_buildspace.gif')} alt='' class='portfolio__img'></img>
           </a>
 
-          <a href='#' className='portfolio__item'>
-            <img src='' alt='' class='portfolio__img'></img>
+          <a href='https://www.twitch.tv/vms_code' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/twitch_cpp.gif')} alt='' class='portfolio__img'></img>
           </a>
 
-          <a href='#' className='portfolio__item'>
-            <img src='' alt='' class='portfolio__img'></img>
+          <a href='https://www.twitch.tv/vms_code' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/twitch_docs.gif')} alt='' class='portfolio__img'></img>
           </a>
+
+          <a href='https://www.twitch.tv/vms_code' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/twitch_flask.gif')} alt='' class='portfolio__img'></img>
+          </a>
+
+          <a href='https://www.youtube.com/channel/UCQesLcw80vA6AGvM_cP-MyA/videos' target='_blank' rel='noreferrer noopener' className='portfolio__item'>
+            <img src={require('./gifs/youtube_channel.gif')} alt='' class='portfolio__img'></img>
+          </a>
+
 
         </div>
       </section>

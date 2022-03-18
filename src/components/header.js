@@ -10,9 +10,6 @@ function Header() {
     
     return (
         <header>
-            <div className='logo'>
-            <img src='' alt=""></img>
-            </div>
             <button className='nav-toggle' aria-label='toggle navigation' onClick={handleClick}>
             <span className='hamburger'></span>
             </button>
