@@ -27,12 +27,10 @@ function App() {
       <section className='about-me' id='about'>
         <h2 className='section__title section__title--about'>Who I am</h2>
           <p>
-            College dropout, went from $15 to $4000,00 playing poker,
-            decided to quit and focus only on programming.
+            I´m a self-taught full-stack developer with a passion for Artificial Intelligence and Consciousness.
           </p>
           <p>
-            My goal is to maximize the chances of survival in a world of exponential tech,
-            so my main focus is on A.I and data analysis.
+            I have a background in Mechanical Engineering and I´m also interested in physics and philosophy.
           </p>
 
       </section>
