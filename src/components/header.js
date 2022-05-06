@@ -1,26 +1,13 @@
 function Header() {
-
-    function handleClick() {
-        document.body.classList.toggle('nav-open');
-    }
-
-    function removeOpen() {
-        document.body.classList.remove('nav-open');
-    }
     
     return (
         <header>
-            <button className='nav-toggle' aria-label='toggle navigation' onClick={handleClick}>
-            <span className='hamburger'></span>
-            </button>
             <nav className='nav'>
-            <ul className='nav__list'>
-                <li className='nav__item'><a href='#home' className='nav__link' onClick={removeOpen}>Home</a></li>
-                <li className='nav__item'><a href='#services' className='nav__link' onClick={removeOpen}>My Services</a></li>
-                <li className='nav__item'><a href='#about' className='nav__link' onClick={removeOpen}>About me</a></li>
-                <li className='nav__item'><a href='#work' className='nav__link' onClick={removeOpen}>My Work</a></li>
-            </ul>
-            </nav>
+            <a href='#home' className='nav__link' >About</a>
+            <a href='#work' className='nav__link' >My Work</a>
+            <a href='#services' className='nav__link'>Hire me</a>
+            <a href='#about' className='nav__link' >Contact me</a>
+        </nav>
         </header>
     )
 }

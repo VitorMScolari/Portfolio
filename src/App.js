@@ -1,28 +1,18 @@
 import './App.css';
-import Footer from './components/footer.js'
-import Header from './components/header.js'
+import Footer from './components/Footer.js'
+import Header from './components/Header.js'
+import Canvas from './components/Canvas.js'
+import Contact from './components/Contact.js'
 
 function App() {
+
 
   return (
     <div className='App'>
       <div className='intro-bg-img'>
         <Header />
-
-        <section className='intro' id='home'>
-          <h1 className='section__title section__title--intro'>
-            Hi, I am <strong>Vitor Scolari</strong>
-          </h1>
-          <p className='section__subtitle section_subtitle--intro'>full-stack dev</p>
-          <img src={require('./images/profile_2.jpg')} className='intro__img'></img>  
-        </section>
       </div>
 
-
-      <section className='my-services' id='services'>
-
-        <a href='#work' className='btn'>My Work</a>
-      </section>
 
       <section className='about-me' id='about'>
         <h2 className='section__title section__title--about'>Who I am</h2>
@@ -81,6 +71,8 @@ function App() {
 
         </div>
       </section>
+
+      <Contact />
 
       <Footer />
 
