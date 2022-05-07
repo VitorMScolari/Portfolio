@@ -39,7 +39,7 @@ const Contact = () => {
           method="POST"
         >
           <h2 className="form-h2">
-            Contact me
+            Contact
           </h2>
           <input
             className="name-input"

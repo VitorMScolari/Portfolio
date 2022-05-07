@@ -15,6 +15,9 @@ function App() {
       </div>
 
       {/* Canvas element will go here */}
+      <div className='intro-animation'>
+
+      </div>
 
       <section className='my-work' id='work'>
         <h2 className='section__title section__title--work'>My Work</h2>

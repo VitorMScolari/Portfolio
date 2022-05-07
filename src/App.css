@@ -148,6 +148,14 @@ header {
 
 canvas {
     background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-animation {
+    height: 305px;
+    width: 100%;
+    background-color: black;
 }
 
 /* My services section */
