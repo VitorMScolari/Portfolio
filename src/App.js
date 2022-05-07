@@ -3,6 +3,7 @@ import Footer from './components/Footer.js'
 import Header from './components/Header.js'
 import Canvas from './components/Canvas.js'
 import Contact from './components/Contact.js'
+import Skills from './components/Skills.js'
 
 function App() {
 
@@ -13,17 +14,7 @@ function App() {
         <Header />
       </div>
 
-
-      <section className='about-me' id='about'>
-        <h2 className='section__title section__title--about'>Who I am</h2>
-          <p>
-            I´m a self-taught full-stack developer with a passion for Artificial Intelligence and Consciousness.
-          </p>
-          <p>
-            I have a background in Mechanical Engineering and I´m also interested in physics and philosophy.
-          </p>
-
-      </section>
+      {/* Canvas element will go here */}
 
       <section className='my-work' id='work'>
         <h2 className='section__title section__title--work'>My Work</h2>
@@ -72,6 +63,7 @@ function App() {
         </div>
       </section>
 
+      <Skills />
       <Contact />
 
       <Footer />
