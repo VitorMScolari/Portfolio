@@ -1,46 +1,37 @@
 import './App.css';
-import Footer from './components/footer.js'
-import Header from './components/header.js'
+import Footer from './components/Footer.js'
+import Header from './components/Header.js'
+import Contact from './components/Contact.js'
+import Skills from './components/Skills.js'
+
 
 function App() {
 
   return (
     <div className='App'>
+
       <div className='intro-bg-img'>
         <Header />
-
-        <section className='intro' id='home'>
-          <h1 className='section__title section__title--intro'>
-            Hi, I am <strong>Vitor Scolari</strong>
-          </h1>
-          <p className='section__subtitle section_subtitle--intro'>full-stack dev</p>
-          <img src={require('./images/profile_2.jpg')} className='intro__img'></img>  
-        </section>
       </div>
 
-
-      <section className='my-services' id='services'>
-
-        <a href='#work' className='btn'>My Work</a>
-      </section>
-
-      <section className='about-me' id='about'>
-        <h2 className='section__title section__title--about'>Who I am</h2>
-          <p>
-            I´m a self-taught full-stack developer with a passion for Artificial Intelligence and Consciousness.
-          </p>
-          <p>
-            I have a background in Mechanical Engineering and I´m also interested in physics and philosophy.
-          </p>
-
-      </section>
+      {/* Canvas element will go here */}
+      <div className='intro-animation'>
+        <div>
+          <center>
+            <span>
+              I´m Vitor, Full-Stack dev<br/>
+              VMS_CODE on Twitch and YouTube
+            </span>
+          </center>
+        </div>
+      </div>
 
       <section className='my-work' id='work'>
         <h2 className='section__title section__title--work'>My Work</h2>
         <p className='section_subtitle'>A selection of my range of work</p>
 
         <div className='portfolio'>
-          <a href='#' className='portfolio__item'>
+          <a href='#skills' className='portfolio__item'>
             <img src={require('./gifs/ScriptVis_flask_1.gif')} alt='' className='portfolio__img'></img>
           </a>
 
@@ -81,6 +72,10 @@ function App() {
 
         </div>
       </section>
+
+      <Skills />
+      
+      <Contact />
 
       <Footer />
 
