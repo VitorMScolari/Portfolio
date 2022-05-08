@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from './components/Footer.js'
 import Header from './components/Header.js'
-import Certificates from './components/Certificates.js'
 import Contact from './components/Contact.js'
 import Skills from './components/Skills.js'
 
