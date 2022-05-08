@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="form-wrapper flex">
+      <div className="form-wrapper flex" id='contact'>
         <form
           className="form"
           onSubmit={submitRequest}

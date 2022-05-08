@@ -1,22 +1,30 @@
 import './App.css';
 import Footer from './components/Footer.js'
 import Header from './components/Header.js'
-import Canvas from './components/Canvas.js'
+import Certificates from './components/Certificates.js'
 import Contact from './components/Contact.js'
 import Skills from './components/Skills.js'
 
-function App() {
 
+function App() {
 
   return (
     <div className='App'>
+
       <div className='intro-bg-img'>
         <Header />
       </div>
 
       {/* Canvas element will go here */}
       <div className='intro-animation'>
-
+        <div>
+          <center>
+            <span>
+              I´m Vitor, Full-Stack dev<br/>
+              VMS_CODE on Twitch and YouTube
+            </span>
+          </center>
+        </div>
       </div>
 
       <section className='my-work' id='work'>
@@ -24,7 +32,7 @@ function App() {
         <p className='section_subtitle'>A selection of my range of work</p>
 
         <div className='portfolio'>
-          <a href='#' className='portfolio__item'>
+          <a href='#skills' className='portfolio__item'>
             <img src={require('./gifs/ScriptVis_flask_1.gif')} alt='' className='portfolio__img'></img>
           </a>
 
@@ -67,6 +75,7 @@ function App() {
       </section>
 
       <Skills />
+      
       <Contact />
 
       <Footer />

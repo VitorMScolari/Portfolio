@@ -146,69 +146,24 @@ header {
     border: 1px solid black;
 }
 
-canvas {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
-
 .intro-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 305px;
     width: 100%;
     background-color: black;
-}
-
-/* My services section */
-
-.my-services {
-    background-color: var(--clr-dark);
-    background-size: cover;
-    /*background-blend-mode: multiply;*/
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
     color: var(--clr-light);
-    text-align: center;
+    padding-left: 0px;
+    background-image: url(./gifs/terminal.gif);
 }
 
-.section__title-services {
-    color: var(--clr-accent);
+.intro__img {
     position: relative;
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 3em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services {
-    margin-bottom: 4em;
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .service + .service {
-        margin-left: 2em;
-    }
-}
-
-
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 15%;
+    margin-left: 150px;
 }
 
 
@@ -331,20 +286,51 @@ canvas {
     padding: 10px;
 }
 
-@media screen and (min-width: 600px) {
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 990px) {
+    .intro-animation {
+        font-size: var(--fs-h3);
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .skills-wrapper {
+        margin: 0 0 0 11px;
+        flex-direction: column;
+    }
+    
     .bar {
+        background-color: #eee;
+        color: #666;
+        position: relative;
         font-size: 11pt;
         height: 28px;
         margin: 0 0 15px 0;
     }
-}
-
-@media screen and (min-width: 960px) {
-    .bars-wrap {
-        margin: 0;
+    
+    .bar span {
+        font-size: var(--fs-body);
+        padding: 0 5px 0 15px;
+        z-index: 1;
     }
-    .animated.slide-in-right {
-        animation: slideInRight 0.75s ease both;
+    
+    .bar .fill {
+        background-color: var(--clr-grey);
+    }
+    
+    .bar .tag {
+        left: 0;
+        position: absolute;
+        top: 0;
+        background-color: var(--clr-accent);
+        color: #fff;
+        height: 100%;
+        min-width: 40px;
     }
 }
 
@@ -358,7 +344,8 @@ canvas {
 
 .bars-wrap {
     max-width: 90%;
-    width: 50%;
+    margin: 0 0 20px 0px;
+    width: 700px;
 }
 
 .flex {
@@ -375,11 +362,14 @@ canvas {
     position: relative;
     width: calc(100% - 225px);
     max-width: 90%;
+    font-size: 11pt;
+    height: 28px;
+    margin: 0 0 15px 0;
 }
 
 .bar span {
     font-size: var(--fs-body);
-    padding: 0 15px 0 0;
+    padding: 0 5px 0 15px;
     z-index: 1;
 }
 
@@ -405,12 +395,66 @@ section {
     color: #616161;
 }
 
-@media screen and (min-width: 1280px) {
-    .blog-wrap {
-        margin: 0 0 50px 20px;
-        width: 270px;
-    }
+/* Contact */
+
+.certificates-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 222px;
+    width: 100%;
+    color: var(--clr-light);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-dark);
 }
+
+
+.cert-fcc span,
+.cert-kaggle span,
+.cert-ztm span,
+.cert-udemy span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-grey);
+    color: var(--clr-light);
+}
+
+.cert-fcc-img,
+.cert-udemy-img {
+    max-width: 66%;
+    margin: 22px 99px 22px 99px;
+}
+
+.fcc,
+.udemy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.kaggle-img
+.ztm-img {
+    max-width: 50%;
+    margin: 22px 22px 22px 88px;
+}
+
+.cert-kaggle-img,
+.cert-ztm-img {
+    max-width: 80%;
+    margin: 11px 0 11px 0;
+}
+
+.kaggle,
+.ztm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
 
 /* Form */
 
@@ -438,6 +482,22 @@ section {
     width: 500px;
     background-color: var(--clr-dark);
     color: var(--clr-light);
+}
+
+@media (max-width: 1000px) {
+    .message-input {
+        height: 222px;
+        width: 300px;
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+    }
+    .name-input,
+    .email-input {
+        height: 33px;
+        width: 300px;
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+    }
 }
 
 

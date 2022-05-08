@@ -4,7 +4,7 @@ function Skills() {
     return (
 
         <>
-            <div className='skills-about'>
+            <div className='skills-about' id='about'>
                 ABOUT
             </div>
 
@@ -25,9 +25,9 @@ function Skills() {
 
                 </div>
 
-                <div class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right" data-animation="slide-in-right">
+                <div class="flex bars-wrap" data-animation="slide-in-right">
                     <div className='skills'>
-                        My Skills
+                        Skills
                     </div>
 
                     <div class="bar flex">
@@ -80,10 +80,10 @@ function Skills() {
                     </div>
 
                     <div class="bar flex">
-                        <div class="bar fill" style={{width: '90%'}}>
+                        <div class="bar fill" style={{width: '85%'}}>
                             <div class="tag bold flex">SQL</div>
                         </div>
-                        <span>90%</span>
+                        <span>85%</span>
                     </div>
 
                     <div class="bar flex">
